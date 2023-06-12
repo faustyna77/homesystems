@@ -6,7 +6,7 @@
 //#define dhtpin 9
 const int dhtpin=9;
 const int czujnikcyf=2;
-const int wiatrak=6;
+
 OneWire czujnik(czujnikcyf);
 DallasTemperature sensor(&czujnik);
 
@@ -43,8 +43,7 @@ void setup() {
   Serial.begin(9600);
   dht.begin();
   sensor.begin();
-  pinMode(wiatrak,OUTPUT);
-  // put your setup code here, to run once:
+  
 
 }
 
@@ -81,13 +80,7 @@ void loop() {
       break;
      
       break;
-      case '5':
-      digitalWrite(wiatrak,HIGH);
-      break;
-      case '6':
-      digitalWrite(wiatrak,LOW);
-      break;
-
+     
 
       
 
