@@ -79,7 +79,7 @@ void loop() {
       Serial.print(" C");
       break;
      
-      break;
+      
      
 
       
